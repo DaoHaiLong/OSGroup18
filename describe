@@ -1,0 +1,27 @@
+long@itachi:~/Desktop/Group18$ cd OSGroup18
++ Change direction
+long@itachi:~/Desktop/Group18/OSGroup18$ ls
+readcmd.c  readcmd.h  README.md  shell-template.c  tst.c
++ List of the folder in the OSGroup18
+
+long@itachi:~/Desktop/Group18/OSGroup18$ gcc shell-template.c readcmd.c -o shell
++  compiles the C code in shell-template.c and readcmd.c to an executable binary shell, which you can run by typing ./shell. The -o flag sets the name of the output file, shell-template.c is the source code file.
+
+long@itachi:~/Desktop/Group18/OSGroup18$ ./shell
++ output shell
+
+shell> ps -ef|grep firefox| wc -l
++ Execution shell
+trace_cmd
+seq[0]: (ps) (-ef) 
+seq[1]: (grep) (firefox) 
+seq[2]: (wc) (-l) 
+
+long@itachi:~/Desktop/Group18/OSGroup18$ ps -ef
++ List of the process
+
+long@itachi:~/Desktop/Group18/OSGroup18$ gcc tst.c readcmd.h readcmd.c -o group
+long@itachi:~/Desktop/Group18/OSGroup18$ ./group
+shell> ps -ef| grep firefox| wc -l
++ doing the same above
+
